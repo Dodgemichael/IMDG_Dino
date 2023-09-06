@@ -264,7 +264,7 @@ MonoBehaviour:
   - prefab: {fileID: 2857803947915276250, guid: aa784a587169c224dbd373b679f4f0b4, type: 3}
     spawnChance: 0.12
   - prefab: {fileID: 7292522149660001, guid: c94cac8ca6f1aa74ba54b79c0c092d16, type: 3}
-    spawnChance: 0.12
+    spawnChance: 0.14
   - prefab: {fileID: 8384343388528159858, guid: 3305fa26ff3b0744eb6f14ed74771d29, type: 3}
     spawnChance: 0.07
   - prefab: {fileID: 3865097933030003924, guid: d6feafb26214a1c4a9fd0e352bc34ee5, type: 3}
@@ -274,7 +274,7 @@ MonoBehaviour:
   - prefab: {fileID: 5399970536998221182, guid: f20d5f34966a62f4387156ec50e55340, type: 3}
     spawnChance: 0.05
   - prefab: {fileID: 3484111923267113301, guid: 64b6e33e4d9082645b40be067a833076, type: 3}
-    spawnChance: 0.5
+    spawnChance: 0.42
   minSpawnRate: 1
   maxSpawnRate: 2
 --- !u!4 &144489278

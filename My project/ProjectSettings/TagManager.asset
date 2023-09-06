@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Obstacle
   - Obsticle
+  - PowerUp
+  - test
   layers:
   - Default
   - TransparentFX

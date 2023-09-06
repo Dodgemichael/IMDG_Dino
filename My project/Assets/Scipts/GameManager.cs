@@ -50,9 +50,14 @@ private void Start()
 public void NewGame()
 {
     Obstacle[] obstacles = FindObjectsOfType<Obstacle>();
+    PowerUp[] powerups = FindObjectsOfType<PowerUp>();
+
 
     foreach (var obstacle in obstacles){
         Destroy(obstacle.gameObject);
+    }
+     foreach (var powerup in powerups){
+        Destroy(powerup.gameObject);
     }
     gameSpeed = initialGameSpeed;
     enabled = true; 
@@ -73,6 +78,10 @@ public void GameOver(){
 
     gameOverText.gameObject.SetActive(true);
     retryButton.gameObject.SetActive(true);
+}
+
+public void Abilty1(){
+    gameSpeed = .1f;
 }
 
 private void Update()

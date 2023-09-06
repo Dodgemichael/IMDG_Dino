@@ -35,4 +35,9 @@ public float jumpForce = 8f;
         GameManager.Instance.GameOver();
     }
  }
+ private void OnTriggerPower(Collider other){
+    if(other.CompareTag("PowerUp")){
+        GameManager.Instance.Abilty1();
+    }
+ }
 }
