@@ -465,7 +465,7 @@ GameObject:
   - component: {fileID: 996301981}
   - component: {fileID: 996301983}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -487,8 +487,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.724691, y: -302.43494}
-  m_SizeDelta: {x: 421.4494, y: 2604.87}
+  m_AnchoredPosition: {x: 10.724691, y: -146.46375}
+  m_SizeDelta: {x: 421.4494, y: 3896.004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &996301981
 MonoBehaviour:
@@ -615,6 +615,31 @@ MonoBehaviour:
     Dodge
 
 
+    Guides
+
+
+    Base Game
+
+    https://zigurous.com/tutorials
+
+
+    Start
+    Screen
+
+    https://youtu.be/zc8ac_qUXQY
+
+
+    Change Scene With Button
+
+    https://youtu.be/EMo-MaKkP9s
+
+
+    Scrolling
+    Credits
+
+    https://youtu.be/rAqyi85IAJ0
+
+
 
     Professor
 
@@ -628,7 +653,8 @@ MonoBehaviour:
 
 
 
-    IMGD 1001
+    IMGD
+    1001
 
 
 
@@ -636,8 +662,7 @@ MonoBehaviour:
 
 
 
-    Daniel
-    Brower
+    Daniel Brower
 
 
 
@@ -645,7 +670,8 @@ MonoBehaviour:
 
 
 
-    Worcester Polytechnic Institute'
+    Worcester Polytechnic
+    Institute'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 181ff1df702a923458222cd49e05aac6, type: 2}
   m_sharedMaterial: {fileID: 5370715482659005641, guid: 181ff1df702a923458222cd49e05aac6, type: 2}
@@ -708,7 +734,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -815.1189, z: 0, w: -161.36804}
+  m_margin: {x: 0, y: 9.475464, z: 0, w: -12.757935}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

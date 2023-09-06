@@ -679,7 +679,7 @@ GameObject:
   - component: {fileID: 1821993862}
   - component: {fileID: 1821993861}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Patch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -819,7 +819,8 @@ MonoBehaviour:
     -Added Credits
 
 
-    -Added Power-Ups'
+    -Added Power-Up
+    System'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 181ff1df702a923458222cd49e05aac6, type: 2}
   m_sharedMaterial: {fileID: 5370715482659005641, guid: 181ff1df702a923458222cd49e05aac6, type: 2}
