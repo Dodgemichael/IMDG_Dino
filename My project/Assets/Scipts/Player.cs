@@ -30,14 +30,18 @@ public float jumpForce = 8f;
         }
         character.Move(direction * Time.deltaTime);
  } 
- private void OnTriggerEnter(Collider other){
-    if(other.CompareTag("Obstacle")){
+ private void OnTriggerEnter(Collider other)
+ {
+    if (other.CompareTag("Obstacle"))
+    {
         GameManager.Instance.GameOver();
     }
- }
- private void OnTriggerPower(Collider other){
-    if(other.CompareTag("PowerUp")){
-        GameManager.Instance.Abilty1();
+    if (other.CompareTag("PowerUp"))
+    {
+        GameManager.Instance.Ability1();
     }
+    
  }
+ 
+ 
 }

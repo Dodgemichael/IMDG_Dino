@@ -60,7 +60,8 @@ public void NewGame()
         Destroy(powerup.gameObject);
     }
     gameSpeed = initialGameSpeed;
-    enabled = true; 
+    enabled = true;
+    score = 0f;
 
     player.gameObject.SetActive(true);
     spawner.gameObject.SetActive(true);
@@ -78,9 +79,11 @@ public void GameOver(){
 
     gameOverText.gameObject.SetActive(true);
     retryButton.gameObject.SetActive(true);
+
+    UpdateHiscore();
 }
 
-public void Abilty1(){
+public void Ability1(){
     gameSpeed = .1f;
 }
 
