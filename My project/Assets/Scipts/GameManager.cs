@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     private Spawner spawner;
 
     private float score;
+    public float immune = 0f;
 private void Awake()
 {
     if (Instance == null)
@@ -71,6 +72,8 @@ public void NewGame()
 }
 
 public void GameOver(){
+   if(immune <= 0f){
+        
     gameSpeed = 0f;
     enabled = false;
 
@@ -81,14 +84,17 @@ public void GameOver(){
     retryButton.gameObject.SetActive(true);
 
     UpdateHiscore();
+    }
 }
 
 public void Ability1(){
-    gameSpeed = .1f;
+    immune = 10.0f;
+    
 }
 
 private void Update()
 {
+immune -= 1 *  Time.deltaTime;
 gameSpeed += gameSpeedIncrease * Time.deltaTime;
   score += gameSpeed * Time.deltaTime;
     scoreText.text = Mathf.FloorToInt(score).ToString("D5");
