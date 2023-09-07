@@ -260,21 +260,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objects:
   - prefab: {fileID: 3584701233249639291, guid: 64969ca69d9722a45bdbd479c6d41190, type: 3}
-    spawnChance: 0.05
+    spawnChance: 0.24
   - prefab: {fileID: 2857803947915276250, guid: aa784a587169c224dbd373b679f4f0b4, type: 3}
-    spawnChance: 0.12
+    spawnChance: 0.18
   - prefab: {fileID: 7292522149660001, guid: c94cac8ca6f1aa74ba54b79c0c092d16, type: 3}
-    spawnChance: 0.14
+    spawnChance: 0.16
   - prefab: {fileID: 8384343388528159858, guid: 3305fa26ff3b0744eb6f14ed74771d29, type: 3}
     spawnChance: 0.07
   - prefab: {fileID: 3865097933030003924, guid: d6feafb26214a1c4a9fd0e352bc34ee5, type: 3}
-    spawnChance: 0.1
+    spawnChance: 0.14
   - prefab: {fileID: 2435248852740088876, guid: 32fb7719ad29bb94ea8163e125661d7c, type: 3}
-    spawnChance: 0.1
+    spawnChance: 0.12
   - prefab: {fileID: 5399970536998221182, guid: f20d5f34966a62f4387156ec50e55340, type: 3}
-    spawnChance: 0.05
+    spawnChance: 0.07
   - prefab: {fileID: 3484111923267113301, guid: 64b6e33e4d9082645b40be067a833076, type: 3}
-    spawnChance: 0.42
+    spawnChance: 0.01
   minSpawnRate: 1
   maxSpawnRate: 2
 --- !u!4 &144489278
@@ -693,6 +693,7 @@ MonoBehaviour:
   hiscoreText: {fileID: 1897175373}
   gameOverText: {fileID: 788517144}
   retryButton: {fileID: 677675773}
+  immune: 0
 --- !u!4 &720931485
 Transform:
   m_ObjectHideFlags: 0
@@ -755,8 +756,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4283650899
+  m_fontColor: {r: 0.3254902, g: 0.3254902, b: 0.3254902, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1094,8 +1095,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4283650899
+  m_fontColor: {r: 0.3254902, g: 0.3254902, b: 0.3254902, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1228,8 +1229,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4283650899
+  m_fontColor: {r: 0.3254902, g: 0.3254902, b: 0.3254902, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1362,8 +1363,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4283650899
+  m_fontColor: {r: 0.3254902, g: 0.3254902, b: 0.3254902, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
