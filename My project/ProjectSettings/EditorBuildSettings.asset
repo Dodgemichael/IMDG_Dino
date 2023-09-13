@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Patch.unity
     guid: e3a35784fb0b74a4d9800edc3ade21fc
+  - enabled: 1
+    path: Assets/Scenes/Original_Dinogame.unity
+    guid: 04ef4805e0f90604bb9b57537d70fe4f
   m_configObjects: {}

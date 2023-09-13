@@ -13,10 +13,11 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI hiscoreText;
 
-
+    public AudioSource deathSound;
 
     public TextMeshProUGUI gameOverText;
     public Button retryButton;
+    public Button menuButton;
     private Player player; 
     private Spawner spawner;
 
@@ -69,11 +70,14 @@ public void NewGame()
 
     gameOverText.gameObject.SetActive(false);
     retryButton.gameObject.SetActive(false);
+    menuButton.gameObject.SetActive(false);
 }
 
 public void GameOver(){
    if(immune <= 0f){
         
+    deathSound.Play();
+
     gameSpeed = 0f;
     enabled = false;
 
@@ -82,6 +86,7 @@ public void GameOver(){
 
     gameOverText.gameObject.SetActive(true);
     retryButton.gameObject.SetActive(true);
+    menuButton.gameObject.SetActive(true);
 
     UpdateHiscore();
     }
