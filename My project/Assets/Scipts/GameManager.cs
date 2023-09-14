@@ -75,7 +75,9 @@ public void NewGame()
 
 public void GameOver(){
    if(immune <= 0f){
-        
+        public void TriggerShake(){
+        shakeDuration = 1f;
+    }
     deathSound.Play();
 
     gameSpeed = 0f;
