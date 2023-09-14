@@ -481,7 +481,7 @@ RectTransform:
   m_GameObject: {fileID: 617431061}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.5}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 139688659}
@@ -489,7 +489,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 375.1, y: 241.7}
+  m_AnchoredPosition: {x: 760, y: 475}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &617431063
@@ -633,8 +633,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.724691, y: -146.46375}
-  m_SizeDelta: {x: 421.4494, y: 3896.004}
+  m_AnchoredPosition: {x: 10.724691, y: -328.20996}
+  m_SizeDelta: {x: 1900, y: 6705.996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &996301981
 MonoBehaviour:
@@ -657,21 +657,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: '
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -786,12 +771,23 @@ MonoBehaviour:
     https://youtu.be/rAqyi85IAJ0
 
 
+    Screeen Shake
+
+    https://youtu.be/N24MhfeoUpE
+
+
+    Audio
+
+    https://youtu.be/J77CMuAwVDY
+
+
 
     Professor
 
 
 
-    Walt Yarbrough
+    Walt
+    Yarbrough
 
 
 
@@ -799,8 +795,7 @@ MonoBehaviour:
 
 
 
-    IMGD
-    1001
+    IMGD 1001
 
 
 
@@ -816,8 +811,8 @@ MonoBehaviour:
 
 
 
-    Worcester Polytechnic
-    Institute'
+    Worcester
+    Polytechnic Institute'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 181ff1df702a923458222cd49e05aac6, type: 2}
   m_sharedMaterial: {fileID: 5370715482659005641, guid: 181ff1df702a923458222cd49e05aac6, type: 2}
@@ -844,8 +839,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

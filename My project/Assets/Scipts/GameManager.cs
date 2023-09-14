@@ -23,6 +23,10 @@ public class GameManager : MonoBehaviour
 
     private float score;
     public float immune = 0f;
+
+    private Shake shake;
+
+
 private void Awake()
 {
     if (Instance == null)
@@ -45,6 +49,7 @@ private void Start()
 {
     player = FindObjectOfType<Player>();
     spawner = FindObjectOfType<Spawner>();
+    shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<Shake>();
    
     NewGame();
 }
@@ -75,10 +80,10 @@ public void NewGame()
 
 public void GameOver(){
    if(immune <= 0f){
-        public void TriggerShake(){
-        shakeDuration = 1f;
-    }
+        
     deathSound.Play();
+
+    shake.CamShake();
 
     gameSpeed = 0f;
     enabled = false;

@@ -17,7 +17,7 @@ public class ScreenShake : MonoBehaviour
  // The initial position of the GameObject
  Vector3 initialPosition;
 
- void Awake()
+ public void Awake()
 {
   if (transform == null)
   {
@@ -26,13 +26,13 @@ public class ScreenShake : MonoBehaviour
 
 }
 
-void OnEnable()
+public void OnEnable()
  {
   initialPosition = transform.localPosition;
  }
 
 
-void Update()
+public void Update()
 {
   if (shakeDuration > 0)
   {

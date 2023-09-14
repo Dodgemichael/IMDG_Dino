@@ -8,6 +8,7 @@ TagManager:
   - Obsticle
   - PowerUp
   - test
+  - ScreenShake
   layers:
   - Default
   - TransparentFX
