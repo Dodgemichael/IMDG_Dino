@@ -2,53 +2,54 @@ using UnityEngine;
 
 public class ScreenShake : MonoBehaviour
 {
-   public Camera mainCam;
+ // Transform of the GameObject you want to shake
+ private Transform transform;
+ 
+ // Desired duration of the shake effect
+ private float shakeDuration = 0f;
+ 
+ // A measure of magnitude for the shake. Tweak based on your preference
+ private float shakeMagnitude = 0.7f;
+ 
+ // A measure of how quickly the shake effect should evaporate
+ private float dampingSpeed = 1.0f;
+ 
+ // The initial position of the GameObject
+ Vector3 initialPosition;
 
-   float shakeAmount = 0;
+ void Awake()
+{
+  if (transform == null)
+  {
+   transform = GetComponent(typeof(Transform)) as Transform;
+  }
 
-   void Awake()
-   {
-    if(mainCam == null)
-        mainCam = Camera.main;
-    
-   }
+}
 
-   void update()
-   {
-    if(Input.GetKeyDown(KeyCode.T))
-    {
-        Shake (0.4f, 0.2f);
-    }
-   }
-
-    public void Shake(float amt, float length )
-    {
-        shakeAmount = amt;
-        InvokeRepeating ("BeginShake", 0, 0.01f);
-        Invoke ("StopShake", length);
-    }
+void OnEnable()
+ {
+  initialPosition = transform.localPosition;
+ }
 
 
-    void DoShake()
-    {
-        if (shakeAmount > 0)
-        {
-            Vector3 camPos = mainCam.transform.position;
+void Update()
+{
+  if (shakeDuration > 0)
+  {
+   transform.localPosition = initialPosition + Random.insideUnitSphere * shakeMagnitude;
+   
+   shakeDuration -= Time.deltaTime * dampingSpeed;
+  }
+  else
+  {
+   shakeDuration = 0f;
+   transform.localPosition = initialPosition;
+  }
+}
 
-            float offsetX = Random.value * shakeAmount * 2 - shakeAmount;
-            float offsetY = Random.value * shakeAmount * 2 - shakeAmount;
+public void TriggerShake() {
+  shakeDuration = 2.0f;
+}
 
-            camPos.x += offsetX;
-            camPos.y += offsetY;
 
-            mainCam.transform.position = camPos;
-        }
-    }
-
-   void stopShake()
-   {
-        CancelInvoke("BeginShake");
-        mainCam.transform.localPosition = Vector3.zero;
-
-   }
 }

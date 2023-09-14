@@ -103,6 +103,7 @@ immune -= 1 *  Time.deltaTime;
 gameSpeed += gameSpeedIncrease * Time.deltaTime;
   score += gameSpeed * Time.deltaTime;
     scoreText.text = Mathf.FloorToInt(score).ToString("D5");
+
 }
  private void UpdateHiscore()
     {
