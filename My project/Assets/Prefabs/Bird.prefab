@@ -11,11 +11,12 @@ GameObject:
   - component: {fileID: 7306246203004196308}
   - component: {fileID: 7910063692785752199}
   - component: {fileID: 2493958350084592213}
-  - component: {fileID: 4177952790972811253}
-  - component: {fileID: -920208910603520830}
+  - component: {fileID: -6191890572140293589}
+  - component: {fileID: -2032159841798638248}
+  - component: {fileID: -3034666344082821586}
   m_Layer: 0
   m_Name: Bird
-  m_TagString: Obsticle
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,7 +109,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.9583333, y: 0.8, z: 0.2}
   m_Center: {x: 0, y: -0.1, z: 0}
---- !u!114 &4177952790972811253
+--- !u!114 &-6191890572140293589
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,13 +118,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 5399970536998221182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90c0bd7488b77944eb5ccdb0af298ca4, type: 3}
+  m_Script: {fileID: 11500000, guid: b081313ad3c32c94d9db1834c5307785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
   - {fileID: 21300000, guid: 8301be4d5e2394e46a3bbde68d181f8b, type: 3}
   - {fileID: 21300000, guid: f27221d7db6f0ce4990998e2ecbb8771, type: 3}
---- !u!114 &-920208910603520830
+--- !u!114 &-2032159841798638248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5399970536998221182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 063806ea7aa8d2641ba0be2b46d4a089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-3034666344082821586
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

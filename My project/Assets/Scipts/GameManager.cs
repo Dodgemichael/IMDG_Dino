@@ -13,14 +13,20 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI hiscoreText;
 
-
+    public AudioSource deathSound;
 
     public TextMeshProUGUI gameOverText;
     public Button retryButton;
+    public Button menuButton;
     private Player player; 
     private Spawner spawner;
 
     private float score;
+    public float immune = 0f;
+
+    private Shake shake;
+
+
 private void Awake()
 {
     if (Instance == null)
@@ -43,6 +49,7 @@ private void Start()
 {
     player = FindObjectOfType<Player>();
     spawner = FindObjectOfType<Spawner>();
+    shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<Shake>();
    
     NewGame();
 }
@@ -50,21 +57,34 @@ private void Start()
 public void NewGame()
 {
     Obstacle[] obstacles = FindObjectsOfType<Obstacle>();
+    PowerUp[] powerups = FindObjectsOfType<PowerUp>();
+
 
     foreach (var obstacle in obstacles){
         Destroy(obstacle.gameObject);
     }
+     foreach (var powerup in powerups){
+        Destroy(powerup.gameObject);
+    }
     gameSpeed = initialGameSpeed;
-    enabled = true; 
+    enabled = true;
+    score = 0f;
 
     player.gameObject.SetActive(true);
     spawner.gameObject.SetActive(true);
 
     gameOverText.gameObject.SetActive(false);
     retryButton.gameObject.SetActive(false);
+    menuButton.gameObject.SetActive(false);
 }
 
 public void GameOver(){
+   if(immune <= 0f){
+        
+    deathSound.Play();
+
+    shake.CamShake();
+
     gameSpeed = 0f;
     enabled = false;
 
@@ -73,13 +93,24 @@ public void GameOver(){
 
     gameOverText.gameObject.SetActive(true);
     retryButton.gameObject.SetActive(true);
+    menuButton.gameObject.SetActive(true);
+
+    UpdateHiscore();
+    }
+}
+
+public void Ability1(){
+    immune = 10.0f;
+    
 }
 
 private void Update()
 {
+immune -= 1 *  Time.deltaTime;
 gameSpeed += gameSpeedIncrease * Time.deltaTime;
   score += gameSpeed * Time.deltaTime;
     scoreText.text = Mathf.FloorToInt(score).ToString("D5");
+
 }
  private void UpdateHiscore()
     {

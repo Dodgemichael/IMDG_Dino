@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
 
 public float gravity = 9.8f * 2f;
 public float jumpForce = 8f;
+public AudioSource jumpSound;
+
  private void Awake()
  {
         character = GetComponent<UnityEngine.CharacterController>();
@@ -25,14 +27,24 @@ public float jumpForce = 8f;
 
             if (Input.GetButton("Jump"))
             {
-                direction = Vector3.up * jumpForce; 
+                direction = Vector3.up * jumpForce;
+                jumpSound.Play();
             }
         }
         character.Move(direction * Time.deltaTime);
  } 
- private void OnTriggerEnter(Collider other){
-    if(other.CompareTag("Obstacle")){
+ private void OnTriggerEnter(Collider other)
+ {
+    if (other.CompareTag("Obstacle"))
+    {
         GameManager.Instance.GameOver();
     }
+    if (other.CompareTag("PowerUp"))
+    {
+        GameManager.Instance.Ability1();
+    }
+    
  }
+ 
+ 
 }
