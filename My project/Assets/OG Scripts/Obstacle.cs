@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Obstacles : MonoBehaviour
+public class Obstacles1 : MonoBehaviour
 {
     private float leftEdge;
 
@@ -10,7 +10,7 @@ public class Obstacles : MonoBehaviour
     }
     private void Update()
     {
-        transform.position += Vector3.left * GameManager.Instance.gameSpeed * Time.deltaTime;
+        transform.position += Vector3.left * GameManager1.Instance.gameSpeed1 * Time.deltaTime;
 
         if(transform.position.x < leftEdge)
         {

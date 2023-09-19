@@ -1,12 +1,12 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player1 : MonoBehaviour
 {
     private CharacterController character;
     private Vector3 direction;
 
-    public float gravity = 9.81f * 2f;
-    public float jumpForce = 8f;
+    public float gravity1 = 9.81f * 2f;
+    public float jumpForce1 = 8f;
 
     private void Awake()
     {
@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        direction += Vector3.down * gravity * Time.deltaTime;
+        direction += Vector3.down * gravity1 * Time.deltaTime;
 
         if(character.isGrounded)
         {
@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
 
             if(Input.GetButton("Jump"))
             {
-                direction = Vector3.up * jumpForce;
+                direction = Vector3.up * jumpForce1;
             }
         }
 
@@ -39,11 +39,7 @@ public class Player : MonoBehaviour
     {
         if(other.CompareTag("Obstacle"))
         {
-            GameManager.Instance.GameOver();
-        }
-        else if(other.CompareTag("Immunity"))
-        {
-            GameManager.Instance.Immunity();
+            GameManager1.Instance.GameOver();
         }
     }
 

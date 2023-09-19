@@ -3,23 +3,23 @@ using TMPro;
 using UnityEngine.UI;
 
 
-public class GameManager : MonoBehaviour
+public class GameManager1 : MonoBehaviour
 {
-    public static GameManager Instance { get; private set; }
+    public static GameManager1 Instance { get; private set; }
 
-    public float initialGameSpeed = 5f;
-    public float gameSpeedIncrease = 0.1f;
-    public float gameSpeed { get; private set; }
+    public float initialGameSpeed1 = 5f;
+    public float gameSpeedIncrease1 = 0.1f;
+    public float gameSpeed1 { get; private set; }
 
-    public TextMeshProUGUI gameOverText;
-    public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI hiscoreText;
-    public Button retryButton;
+    public TextMeshProUGUI gameOverText1;
+    public TextMeshProUGUI scoreText1;
+    public TextMeshProUGUI hiscoreText1;
+    public Button retryButton1;
 
-    private Player player;
-    private Spawner spawner;
+    private Player player1;
+    private Spawner spawner1;
 
-    private float score;
+    private float score1;
 
 
     private void Awake()
@@ -44,8 +44,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        player = FindObjectOfType<Player>();
-        spawner = FindObjectOfType<Spawner>();
+        player1 = FindObjectOfType<Player>();
+        spawner1 = FindObjectOfType<Spawner>();
 
         NewGame();
     }
@@ -59,54 +59,49 @@ public class GameManager : MonoBehaviour
             Destroy(obstacle.gameObject);
         }
 
-        PowerUp[] powerups = FindObjectsOfType<PowerUp>();
+      
 
-        foreach (var powerup in powerups)
-        {
-            Destroy(powerup.gameObject);
-        }
-
-        gameSpeed = initialGameSpeed;
-        score = 0f;
+        gameSpeed1 = initialGameSpeed1;
+        score1 = 0f;
         enabled = true;
 
-        player.gameObject.SetActive(true);
-        spawner.gameObject.SetActive(true);
-        gameOverText.gameObject.SetActive(false);
-        retryButton.gameObject.SetActive(false);
+        player1.gameObject.SetActive(true);
+        spawner1.gameObject.SetActive(true);
+        gameOverText1.gameObject.SetActive(false);
+        retryButton1.gameObject.SetActive(false);
 
         UpdateHiscore();
     }
 
     public void GameOver()
     {
-        gameSpeed = 0f;
+        gameSpeed1 = 0f;
         enabled = false;
 
-        player.gameObject.SetActive(false);
-        spawner.gameObject.SetActive(false);
-        gameOverText.gameObject.SetActive(true);
-        retryButton.gameObject.SetActive(true);
+        player1.gameObject.SetActive(false);
+        spawner1.gameObject.SetActive(false);
+        gameOverText1.gameObject.SetActive(true);
+        retryButton1.gameObject.SetActive(true);
         UpdateHiscore();
     }
 
     private void Update()
     {
-        gameSpeed += gameSpeedIncrease * Time.deltaTime;
-        score += gameSpeed * Time.deltaTime;
-        scoreText.text = Mathf.FloorToInt(score).ToString("D5");
+        gameSpeed1 += gameSpeedIncrease1 * Time.deltaTime;
+        score1 += gameSpeed1 * Time.deltaTime;
+        scoreText1.text = Mathf.FloorToInt(score1).ToString("D5");
     }
 
     private void UpdateHiscore()
     {
-        float hiscore = PlayerPrefs.GetFloat("hiscore", 0);
-        if (score > hiscore)
+        float hiscore1 = PlayerPrefs.GetFloat("hiscore", 0);
+        if (score1 > hiscore1)
         {
-            hiscore = score;
-            PlayerPrefs.SetFloat("hiscore", hiscore);
+            hiscore1 = score1;
+            PlayerPrefs.SetFloat("hiscore", hiscore1);
         }
 
-        hiscoreText.text = Mathf.FloorToInt(hiscore).ToString("D5");
+        hiscoreText1.text = Mathf.FloorToInt(hiscore1).ToString("D5");
     }
 
     public void Immunity()

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Ground : MonoBehaviour
+public class Ground1 : MonoBehaviour
 {
     private MeshRenderer meshRenderer;
 
@@ -11,7 +11,7 @@ public class Ground : MonoBehaviour
 
     private void Update()
     {
-        float speed = GameManager.Instance.gameSpeed / transform.localScale.x;
+        float speed = GameManager1.Instance.gameSpeed1 / transform.localScale.x;
         meshRenderer.material.mainTextureOffset += Vector2.right * speed * Time.deltaTime;
     }
 }

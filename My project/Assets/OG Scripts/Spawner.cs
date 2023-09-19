@@ -1,23 +1,23 @@
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class Spawner1 : MonoBehaviour
 {
     [System.Serializable]
-    public struct SpawnableObject
+    public struct SpawnableObject1
     {
-        public GameObject prefab;
+        public GameObject prefab1;
         [Range(0f, 1f)]
-        public float spawnChance;
+        public float spawnChance1;
     }
 
-    public SpawnableObject[] objects;
+    public SpawnableObject1[] objects1;
 
-    public float minSpawnRate = 1f;
-    public float maxSpawnRate = 2f;
+    public float minSpawnRate1 = 1f;
+    public float maxSpawnRate1 = 2f;
 
     private void OnEnable()
     {
-        Invoke(nameof(Spawn), Random.Range(minSpawnRate, maxSpawnRate));
+        Invoke(nameof(Spawn), Random.Range(minSpawnRate1, maxSpawnRate1));
     }
 
     private void OnDisable()
@@ -27,21 +27,21 @@ public class Spawner : MonoBehaviour
 
     private void Spawn()
     {
-        float spawnChance = Random.value;
+        float spawnChance1 = Random.value;
 
-        foreach (var obj in objects)
+        foreach (var obj in objects1)
         {
-            if (spawnChance < obj.spawnChance)
+            if (spawnChance1 < obj.spawnChance1)
             {
-                GameObject obstacle = Instantiate(obj.prefab);
+                GameObject obstacle = Instantiate(obj.prefab1);
                 obstacle.transform.position += transform.position;
                 break;
             }
 
-            spawnChance -= obj.spawnChance;
+            spawnChance1 -= obj.spawnChance1;
         }
 
-        Invoke(nameof(Spawn), Random.Range(minSpawnRate, maxSpawnRate));
+        Invoke(nameof(Spawn), Random.Range(minSpawnRate1, maxSpawnRate1));
     }
 
 }
