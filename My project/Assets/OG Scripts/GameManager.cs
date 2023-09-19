@@ -104,12 +104,4 @@ public class GameManager1 : MonoBehaviour
         hiscoreText1.text = Mathf.FloorToInt(hiscore1).ToString("D5");
     }
 
-    public void Immunity()
-    {
-        // create immunity time variable
-        // on hit, start timer 
-        // while timer is less that immunity time,
-        //  turn off collisions
-        
-    }
 }
