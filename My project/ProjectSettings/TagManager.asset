@@ -9,6 +9,7 @@ TagManager:
   - PowerUp
   - test
   - ScreenShake
+  - PowerUp2
   layers:
   - Default
   - TransparentFX

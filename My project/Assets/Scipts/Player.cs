@@ -43,6 +43,10 @@ public AudioSource jumpSound;
     {
         GameManager.Instance.Ability1();
     }
+    if (other.CompareTag("PowerUp2"))
+    {
+        GameManager.Instance.Ability2();
+    }
     
  }
  

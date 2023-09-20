@@ -104,6 +104,11 @@ public void Ability1(){
     
 }
 
+public void Ability2(){
+    gameSpeed = gameSpeed - 1.5f;
+    
+}
+
 private void Update()
 {
 immune -= 1 *  Time.deltaTime;
