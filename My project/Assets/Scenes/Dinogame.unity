@@ -282,23 +282,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objects:
-  - prefab: {fileID: 3584701233249639291, guid: 64969ca69d9722a45bdbd479c6d41190, type: 3}
+  - prefab: {fileID: 6552275499475119394, guid: aaa913ed3c7124a4ebbdffb8fc2abc5b, type: 3}
     spawnChance: 0.046
-  - prefab: {fileID: 2857803947915276250, guid: aa784a587169c224dbd373b679f4f0b4, type: 3}
+  - prefab: {fileID: 3660623766480036624, guid: f979477b1fc9e06448baa5f43eacc4b3, type: 3}
     spawnChance: 0.096
-  - prefab: {fileID: 7292522149660001, guid: c94cac8ca6f1aa74ba54b79c0c092d16, type: 3}
+  - prefab: {fileID: 6105596696743252460, guid: 5ed192f26cc61a843a7818f03e08fbf0, type: 3}
     spawnChance: 0.086
-  - prefab: {fileID: 8384343388528159858, guid: 3305fa26ff3b0744eb6f14ed74771d29, type: 3}
+  - prefab: {fileID: 6154157980335358205, guid: 0f82ea54f533b15429505fb99b97f6d3, type: 3}
     spawnChance: 0.026
-  - prefab: {fileID: 3865097933030003924, guid: d6feafb26214a1c4a9fd0e352bc34ee5, type: 3}
+  - prefab: {fileID: 5128319000589621240, guid: b4a1dc264cb27aa47bf3086b15648992, type: 3}
     spawnChance: 0.046
-  - prefab: {fileID: 2435248852740088876, guid: 32fb7719ad29bb94ea8163e125661d7c, type: 3}
+  - prefab: {fileID: 3148756698794954586, guid: 7fa26f4ae4b586346b07c718cf81ab3f, type: 3}
     spawnChance: 0.106
-  - prefab: {fileID: 5399970536998221182, guid: f20d5f34966a62f4387156ec50e55340, type: 3}
+  - prefab: {fileID: 9130722494373049499, guid: 7848ad7b3a12280408c7a731f94db55e, type: 3}
     spawnChance: 0.116
-  - prefab: {fileID: 3484111923267113301, guid: 64b6e33e4d9082645b40be067a833076, type: 3}
+  - prefab: {fileID: 2601345301623816993, guid: 685329580d08f9f4da12b48c01b6692f, type: 3}
     spawnChance: 0.166
-  - prefab: {fileID: 5003392430753421140, guid: c13d4dfb36b87e34b93c82c410daebff, type: 3}
+  - prefab: {fileID: 5256427485015898370, guid: 62cc9cd81b0f56e40b4201140380a41e, type: 3}
     spawnChance: 0.225
   minSpawnRate: 1
   maxSpawnRate: 2
@@ -551,7 +551,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 2e66cc34089e83b4b9f951ef049ecce7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: da5dadfbc38ecf14e81f2dbcbf16352f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -605,8 +605,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: 36b2a84c5f9e94144916439c9526c949, type: 3}
-  - {fileID: 21300000, guid: 111f1a0c3d352264db44a90c779436f6, type: 3}
+  - {fileID: 21300000, guid: b0c37c94ceff9174391bce78d5ae9dfd, type: 3}
+  - {fileID: 21300000, guid: 0a32af4240de3824fa701bbd4550b28f, type: 3}
 --- !u!82 &180684230
 AudioSource:
   m_ObjectHideFlags: 0
@@ -740,7 +740,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.8392157, g: 0.8392157, b: 0.8666667, a: 0}
+  m_BackGroundColor: {r: 0.740566, g: 0.92964107, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
