@@ -109,6 +109,11 @@ public void Ability2(){
     
 }
 
+public void Ability3()
+    {
+        score += 300f;
+    }
+
 private void Update()
 {
 immune -= 1 *  Time.deltaTime;

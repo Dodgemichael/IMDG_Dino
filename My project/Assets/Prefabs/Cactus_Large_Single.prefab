@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 610493848711498241}
   - component: {fileID: 3767807669045899400}
   - component: {fileID: 3766773688385077598}
-  - component: {fileID: 1804216664936807568}
   m_Layer: 0
   m_Name: Cactus_Large_Single
   m_TagString: Obstacle
@@ -118,17 +117,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 063806ea7aa8d2641ba0be2b46d4a089, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1804216664936807568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2857803947915276250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86ce13bf0e8e446479e3fd34031fba5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

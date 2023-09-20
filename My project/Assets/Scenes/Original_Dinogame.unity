@@ -606,8 +606,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 720931486}
+        m_TargetAssemblyTypeName: GameManager1, Assembly-CSharp
         m_MethodName: NewGame
         m_Mode: 1
         m_Arguments:
