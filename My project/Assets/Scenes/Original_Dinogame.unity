@@ -287,7 +287,7 @@ MonoBehaviour:
   - prefab1: {fileID: 2435248852740088876, guid: 32fb7719ad29bb94ea8163e125661d7c, type: 3}
     spawnChance1: 0.1
   - prefab1: {fileID: 5399970536998221182, guid: f20d5f34966a62f4387156ec50e55340, type: 3}
-    spawnChance1: 0.05
+    spawnChance1: 0.5
   minSpawnRate1: 1
   maxSpawnRate1: 2
 --- !u!1 &180684223
@@ -301,8 +301,8 @@ GameObject:
   - component: {fileID: 180684227}
   - component: {fileID: 180684226}
   - component: {fileID: 180684225}
-  - component: {fileID: 180684229}
   - component: {fileID: 180684228}
+  - component: {fileID: 180684229}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -697,7 +697,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 720931483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2689e457e3309ed4fa9f8b2ceda520b2, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a0c50611f32de241b1903bb3bec5f48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   initialGameSpeed1: 5
@@ -705,7 +705,7 @@ MonoBehaviour:
   gameOverText1: {fileID: 788517144}
   scoreText1: {fileID: 1470192973}
   hiscoreText1: {fileID: 1897175373}
-  retryButton1: {fileID: 677675773}
+  retryButton1: {fileID: 0}
 --- !u!1 &788517143
 GameObject:
   m_ObjectHideFlags: 0

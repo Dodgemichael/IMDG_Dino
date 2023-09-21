@@ -37,7 +37,7 @@ public class Player1 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Obstacle"))
+        if(other.CompareTag("Obstacle1"))
         {
             GameManager1.Instance.GameOver();
         }

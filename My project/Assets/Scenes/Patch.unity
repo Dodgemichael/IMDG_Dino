@@ -836,7 +836,20 @@ MonoBehaviour:
     Audio
 
 
-    -Added Screen Shake on death'
+    -Added Screen Shake on death
+
+
+    0.0.1.0s3
+
+
+    -Added Color
+
+
+    -Added
+    Meteor Obstacle
+
+
+    -Added Score Up and Slow Down Powerups'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 181ff1df702a923458222cd49e05aac6, type: 2}
   m_sharedMaterial: {fileID: 5370715482659005641, guid: 181ff1df702a923458222cd49e05aac6, type: 2}

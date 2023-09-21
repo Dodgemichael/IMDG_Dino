@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 7910063692785752199}
   - component: {fileID: 2493958350084592213}
   - component: {fileID: -6191890572140293589}
-  - component: {fileID: -2032159841798638248}
+  - component: {fileID: -1314432692312152924}
   m_Layer: 0
   m_Name: Bird
-  m_TagString: Obstacle
+  m_TagString: Obstacle1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,7 +123,7 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: 8301be4d5e2394e46a3bbde68d181f8b, type: 3}
   - {fileID: 21300000, guid: f27221d7db6f0ce4990998e2ecbb8771, type: 3}
---- !u!114 &-2032159841798638248
+--- !u!114 &-1314432692312152924
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7906331661297528399}
   - component: {fileID: 8690094857551199683}
   - component: {fileID: -7422762253973439914}
-  - component: {fileID: 2452664712487109840}
+  - component: {fileID: 6641194825846068320}
   m_Layer: 0
   m_Name: Colored Meteor
   m_TagString: Obstacle
@@ -107,7 +107,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3, y: 3.7, z: 0.2}
   m_Center: {x: 0, y: 0.1, z: 0}
---- !u!114 &2452664712487109840
+--- !u!114 &6641194825846068320
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,6 +116,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5256427485015898370}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c596701bcf2700648809b1d7e242f386, type: 3}
+  m_Script: {fileID: 11500000, guid: 86ce13bf0e8e446479e3fd34031fba5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

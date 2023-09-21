@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1210231321232253546}
   - component: {fileID: 1376294115667941614}
   - component: {fileID: 182764800733914967}
-  - component: {fileID: 2104668689299195539}
+  - component: {fileID: 5141774253513657295}
   m_Layer: 0
   m_Name: Clock Sprite (1)
   m_TagString: PowerUp2
@@ -107,7 +107,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6, y: 0.6, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2104668689299195539
+--- !u!114 &5141774253513657295
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,6 +116,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1229373062168761274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e65c6f2af1668da4c9584c8b4cd56262, type: 3}
+  m_Script: {fileID: 11500000, guid: c596701bcf2700648809b1d7e242f386, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -293,13 +293,17 @@ MonoBehaviour:
   - prefab: {fileID: 5128319000589621240, guid: b4a1dc264cb27aa47bf3086b15648992, type: 3}
     spawnChance: 0.046
   - prefab: {fileID: 3148756698794954586, guid: 7fa26f4ae4b586346b07c718cf81ab3f, type: 3}
-    spawnChance: 0.106
+    spawnChance: 0.03
   - prefab: {fileID: 9130722494373049499, guid: 7848ad7b3a12280408c7a731f94db55e, type: 3}
-    spawnChance: 0.116
+    spawnChance: 0.094
   - prefab: {fileID: 2601345301623816993, guid: 685329580d08f9f4da12b48c01b6692f, type: 3}
-    spawnChance: 0.166
+    spawnChance: 0.1
   - prefab: {fileID: 5256427485015898370, guid: 62cc9cd81b0f56e40b4201140380a41e, type: 3}
-    spawnChance: 0.225
+    spawnChance: 0.092
+  - prefab: {fileID: 3519360338022115387, guid: 6a17f8528a276244e9c222df94cb993a, type: 3}
+    spawnChance: 0.093
+  - prefab: {fileID: 1229373062168761274, guid: 010f4a58121aaa943a93dd85e4c80bea, type: 3}
+    spawnChance: 0.094
   minSpawnRate: 1
   maxSpawnRate: 2
 --- !u!4 &144489278
