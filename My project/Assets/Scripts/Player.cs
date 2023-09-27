@@ -62,8 +62,9 @@ private float spamJumped = 0f;
                      {
                         direction = Vector3.up * 7f;
                         jumped = 1f;
-                
-                    }
+                        jumpSound.Play();
+
+                        }
                 }
             }
         }

@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI hiscoreText;
 
     public AudioSource deathSound;
+    public AudioSource music;
 
     public TextMeshProUGUI gameOverText;
     public Button retryButton;
@@ -76,12 +77,16 @@ public void NewGame()
     gameOverText.gameObject.SetActive(false);
     retryButton.gameObject.SetActive(false);
     menuButton.gameObject.SetActive(false);
+
+    music.Play();
 }
 
 public void GameOver(){
    if(immune <= 0f){
         
     deathSound.Play();
+
+            music.Stop();
 
     shake.CamShake();
 
