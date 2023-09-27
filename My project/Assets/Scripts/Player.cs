@@ -22,7 +22,8 @@ public AudioSource jumpSound;
 
  private void Update()
  {
-        float jumpTime = 0f;
+    //float PlayerxPos = GameObject.Find("Player").transform.position.x;
+       // float jumpTime = 0f;
       
         direction += Vector3.down * gravity * Time.deltaTime;
         
@@ -34,12 +35,13 @@ public AudioSource jumpSound;
             {
                 direction = Vector3.up * jumpForce;
                 jumpSound.Play();
-                jumpTime = Time.deltaTime; 
+                //jumpTime = Time.deltaTime; 
             }
         }
-
-        if(Time.deltaTime  <= jumpTime + .2f){
-
+/*
+        if(PlayerxPos> 0){
+            
+         if(PlayerxPos < 15){
            
             if (Input.GetButton("Jump"))
             {
@@ -49,6 +51,7 @@ public AudioSource jumpSound;
             }
         
         }
+        }*/
         character.Move(direction * Time.deltaTime);
         
  } 
