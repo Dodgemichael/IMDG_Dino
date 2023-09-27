@@ -7,7 +7,9 @@ public class Player : MonoBehaviour
 
 public float gravity = 9.8f * 2f;
 public float jumpForce = 8f;
+public float doubleForce = 4f;
 public AudioSource jumpSound;
+
 
  private void Awake()
  {
@@ -20,7 +22,10 @@ public AudioSource jumpSound;
 
  private void Update()
  {
+        float jumpTime = 0f;
+      
         direction += Vector3.down * gravity * Time.deltaTime;
+        
         if (character.isGrounded)
         {
             direction = Vector3.down;
@@ -29,9 +34,23 @@ public AudioSource jumpSound;
             {
                 direction = Vector3.up * jumpForce;
                 jumpSound.Play();
+                jumpTime = Time.deltaTime; 
             }
         }
+
+        if(Time.deltaTime  <= jumpTime + .2f){
+
+           
+            if (Input.GetButton("Jump"))
+            {
+                direction = Vector3.up * 4f;
+                
+                
+            }
+        
+        }
         character.Move(direction * Time.deltaTime);
+        
  } 
  private void OnTriggerEnter(Collider other)
  {
