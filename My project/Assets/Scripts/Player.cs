@@ -10,6 +10,9 @@ public float jumpForce = 8f;
 public float doubleForce = 4f;
 public AudioSource jumpSound;
 
+private float jumped = 0f;
+private float spamJumped = 0f;
+
 
  private void Awake()
  {
@@ -22,8 +25,8 @@ public AudioSource jumpSound;
 
  private void Update()
  {
-    //float PlayerxPos = GameObject.Find("Player").transform.position.x;
-       // float jumpTime = 0f;
+    float PlayeryPos = GameObject.Find("player").transform.position.y;
+       
       
         direction += Vector3.down * gravity * Time.deltaTime;
         
@@ -35,23 +38,35 @@ public AudioSource jumpSound;
             {
                 direction = Vector3.up * jumpForce;
                 jumpSound.Play();
-                //jumpTime = Time.deltaTime; 
+                jumped = 0f;
+                spamJumped =0f;
+                
             }
         }
-/*
-        if(PlayerxPos> 0){
+        if(Input.GetButtonDown("Jump")){
+            if(PlayeryPos> .9){
+                if(PlayeryPos < 1.61){
+                    spamJumped = 1f;
+
+                }
+             }
+         }
+
+        if(spamJumped == 0f)
+        if(jumped == 0f){
+            if(PlayeryPos>= 1.61){
             
-         if(PlayerxPos < 15){
+                if(PlayeryPos < 1.7){
            
-            if (Input.GetButton("Jump"))
-            {
-                direction = Vector3.up * 4f;
+                     if (Input.GetButtonDown("Jump"))
+                     {
+                        direction = Vector3.up * 7f;
+                        jumped = 1f;
                 
-                
+                    }
+                }
             }
-        
         }
-        }*/
         character.Move(direction * Time.deltaTime);
         
  } 

@@ -289,21 +289,21 @@ MonoBehaviour:
   - prefab: {fileID: 6105596696743252460, guid: 5ed192f26cc61a843a7818f03e08fbf0, type: 3}
     spawnChance: 0.086
   - prefab: {fileID: 6154157980335358205, guid: 0f82ea54f533b15429505fb99b97f6d3, type: 3}
-    spawnChance: 0.026
+    spawnChance: 0.076
   - prefab: {fileID: 5128319000589621240, guid: b4a1dc264cb27aa47bf3086b15648992, type: 3}
     spawnChance: 0.046
   - prefab: {fileID: 3148756698794954586, guid: 7fa26f4ae4b586346b07c718cf81ab3f, type: 3}
-    spawnChance: 0.03
+    spawnChance: 0.1
   - prefab: {fileID: 9130722494373049499, guid: 7848ad7b3a12280408c7a731f94db55e, type: 3}
     spawnChance: 0.094
   - prefab: {fileID: 322751849580538558, guid: a4a46f493b88221438bccfb7f0ad7e14, type: 3}
-    spawnChance: 0.1
+    spawnChance: 0.02
   - prefab: {fileID: 5256427485015898370, guid: 62cc9cd81b0f56e40b4201140380a41e, type: 3}
-    spawnChance: 0.092
+    spawnChance: 0.07
   - prefab: {fileID: 3519360338022115387, guid: 6a17f8528a276244e9c222df94cb993a, type: 3}
-    spawnChance: 0.093
+    spawnChance: 0.03
   - prefab: {fileID: 1912458246913847630, guid: 46765231c73d8b04799ae42b91ffd749, type: 3}
-    spawnChance: 0.094
+    spawnChance: 0.024
   minSpawnRate: 1
   maxSpawnRate: 2
 --- !u!4 &144489278
@@ -595,6 +595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gravity: 19.6
   jumpForce: 8
+  doubleForce: 4
   jumpSound: {fileID: 180684230}
 --- !u!114 &180684229
 MonoBehaviour:
