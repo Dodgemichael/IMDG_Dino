@@ -58,16 +58,25 @@ private void Start()
 public void NewGame()
 {
     Obstacle[] obstacles = FindObjectsOfType<Obstacle>();
-    PowerUp[] powerups = FindObjectsOfType<PowerUp>();
+    PowerUp[] powerups = FindObjectsOfType<PowerUp>(); 
+    PowerUp2[] powerups2 = FindObjectsOfType<PowerUp2>();
+    PowerUp3[] powerups3= FindObjectsOfType<PowerUp3>();
 
-
-    foreach (var obstacle in obstacles){
+        foreach (var obstacle in obstacles){
         Destroy(obstacle.gameObject);
     }
      foreach (var powerup in powerups){
         Destroy(powerup.gameObject);
     }
-    gameSpeed = initialGameSpeed;
+        foreach (var powerup2 in powerups2)
+        {
+            Destroy(powerup2.gameObject);
+        }
+        foreach (var powerup3 in powerups3)
+        {
+            Destroy(powerup3.gameObject);
+        }
+        gameSpeed = initialGameSpeed;
     enabled = true;
     score = 0f;
 
