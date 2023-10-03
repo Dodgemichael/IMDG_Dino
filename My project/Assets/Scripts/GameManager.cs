@@ -127,6 +127,10 @@ public void Ability3()
     {
         score += 300f;
     }
+public void Ability4(){
+    gameSpeed = gameSpeed + 1.5f;
+    
+}
 
 private void Update()
 {

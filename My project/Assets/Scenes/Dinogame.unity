@@ -302,6 +302,8 @@ MonoBehaviour:
     spawnChance: 0.02
   - prefab: {fileID: 5256427485015898370, guid: 62cc9cd81b0f56e40b4201140380a41e, type: 3}
     spawnChance: 0.08
+  - prefab: {fileID: 1912458246913847630, guid: e46dc18758363cf44af917a02e9a66e9, type: 3}
+    spawnChance: 0.08
   minSpawnRate: 1
   maxSpawnRate: 2
 --- !u!4 &144489278
@@ -1586,7 +1588,7 @@ MonoBehaviour:
   - prefab: {fileID: 3519360338022115387, guid: 6a17f8528a276244e9c222df94cb993a, type: 3}
     spawnChance: 0.08
   - prefab: {fileID: 1912458246913847630, guid: 46765231c73d8b04799ae42b91ffd749, type: 3}
-    spawnChance: 0.08
+    spawnChance: 0.03
   minSpawnRate: 1
   maxSpawnRate: 2
 --- !u!4 &1003242686
