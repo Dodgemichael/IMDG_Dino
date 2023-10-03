@@ -76,6 +76,7 @@ public void NewGame()
         {
             Destroy(powerup3.gameObject);
         }
+       
         gameSpeed = initialGameSpeed;
     enabled = true;
     score = 0f;
@@ -128,7 +129,7 @@ public void Ability3()
         score += 300f;
     }
 public void Ability4(){
-    gameSpeed = gameSpeed + 1.5f;
+    gameSpeed = gameSpeed + 2f;
     
 }
 
