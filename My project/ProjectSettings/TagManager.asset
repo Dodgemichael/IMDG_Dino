@@ -13,6 +13,7 @@ TagManager:
   - PowerUp3
   - Obstacle1
   - PowerUp4
+  - PowerUp5
   layers:
   - Default
   - TransparentFX

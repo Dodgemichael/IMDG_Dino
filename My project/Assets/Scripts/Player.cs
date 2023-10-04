@@ -93,6 +93,11 @@ private float spamJumped = 0f;
     {
         GameManager.Instance.Ability4();
     }
+       if (other.CompareTag("PowerUp5"))
+    {
+        GameManager.Instance.Ability5();
+    }
+    
     
  }
  
